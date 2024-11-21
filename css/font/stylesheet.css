@@ -1,0 +1,11 @@
+@font-face {
+    font-family: '';
+    src: url('SF_WinterSerif-Medium25.eot');
+    src: url('SF_WinterSerif-Medium25.eot?#iefix') format('embedded-opentype'),
+        url('SF_WinterSerif-Medium25.woff2') format('woff2'),
+        url('SF_WinterSerif-Medium25.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+
+/* header 시작 */
+
+#header_wrap {
+    background-color: #fff;
+    /* position: fixed;
+    top: center; */
+    width: 100%;
+    z-index: 2;
+    box-shadow: #00000033 1px 1px 10px;
+}
+
+.header {
+    width: 1520px;
+    height: 84px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo>img {
+    display: block;
+}
+
+.gnb {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    width: 70%;
+}
+
+.gnb>li>a {
+    display: block;
+    width: 100px;
+    padding: 14px 0;
+    margin: 20px 20px 0 20px;
+}
+
+.util {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 141px;
+    margin-top: 14px;
+    background: url(../img/menu_1_s.png) no-repeat top 0 right 44px;
+}
+
+.util li:nth-child(2) {
+    margin-right: 14px;
+}
+
+/* hover */
+
+#header_wrap:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.gnb li:hover {
+    color: #74b754;
+    background: url(../img/menu_hover_s.png) no-repeat top 18px center;
+}
+
+.util li img {
+    display: block;
+}
+
+.util li:hover img {
+    opacity: 0%;
+}
+
+.util li:nth-child(1):hover {
+    background-image: url(../img/icon_search\ 1\ hover.png);
+}
+
+.util li:nth-child(2):hover {
+    background-image: url(../img/icon_cart\ 1\ hover.png);
+}
+
+.util li:nth-child(3):hover {
+    background-image: url(../img/icon_user\ 1\ hover.png);
+}
+
+
+/* header 끝 */
+
+
+
+/* banner 시작 */
+
+.banner {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner h1 {
+    font-family: '';
+    font-size: 60px;
+    font-weight: 400;
+    color: #74b754;
+    padding: 114px 0;
+}
+
+.banner>img {
+    width: 755px;
+}
+
+/* banner 끝 */
+
+
+/* section1 시작 */
+
+.section1 {
+    width: 600px;
+    margin: 135px auto;
+    text-align: center;
+}
+
+
+.section1 h2 {
+    font-family: '';
+    color: #74b754;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.menu li a {
+    display: block;
+    padding: 5px 10px;
+    border: #ddd 1px solid;
+    border-radius: 40px;
+    width: 130px;
+    box-sizing: border-box;
+
+}
+
+.menu li:hover a,
+.on {
+    background-color: #74b754;
+    border-radius: 40px;
+    color: #fff;
+    width: 130px;
+}
+
+/* .menu>li>a.visited {
+    background-color: #74b754;
+    border-radius: 40px;
+    color: #fff;
+    width: 130px;
+} */
+
+
+/* section1 끝 */
+
+
+
+/* section2 시작 */
+
+.section2 {
+    width: 1200px;
+    margin: 150px auto;
+}
+
+.shop_list>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop_list>ul>li {
+    width: 23%;
+    text-align: left;
+}
+
+.shop_box {
+    overflow: hidden;
+}
+
+.shop_box img {
+    display: block;
+    width: 100%;
+}
+
+.shop_box:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.shop_title {
+    display: block;
+    font-size: 20px;
+    padding: 20px 0 0px 0;
+    line-height: 1.2em;
+    color: #666;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.shop_list ul li:nth-child(5),
+.shop_list ul li:nth-child(6),
+.shop_list ul li:nth-child(7),
+.shop_list ul li:nth-child(8) {
+    padding: 60px 0;
+}
+
+
+
+
+.number {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.number>li {
+    text-align: center;
+}
+
+.number>li>a {
+    display: block;
+    width: 30px;
+    box-sizing: border-box;
+    border-bottom: #ddd 3px solid;
+}
+
+/* .number li:hover a, .on2{
+    border-bottom: #74b754 3px solid;
+}
+    
+제이쿼리 사용 */
+
+
+/* 축소 시 너비 조정 */
+/* @media(max-width:1520px){
+    .section2{
+        width: 90%;
+    }
+} */
+/* section2 끝 */
+
+
+
+
+
+
+
+
+
+/* footer 시작 */
+#footer_wrap {
+    background-color: #ddd;
+}
+
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.foot_1 {
+    width: 60%;
+}
+
+.foot_1 ul {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.foot_1 p {
+    font-size: 15px;
+}
+
+.foot_2 {
+    width: 20%;
+}
+
+.foot_2 h1 {
+    padding: 5px 0 10px 0;
+}
+
+.cs_time {
+    font-size: 15px;
+}
+
+.foot_3 {
+    width: 12%;
+}
+
+.foot_util {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot_util li {
+    width: 40px;
+}
+
+.foot_util li img {
+    border-radius: 50px;
+    width: 100%;
+}
+
+
+
+
+/* cs button */
+.cs_button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px #33333356;
+    overflow: hidden;
+}
+
+.cs_button:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+.cs_button>img {
+    display: block;
+    width: 100%;
+}
+
+/* top button */
+.top_button {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 100;
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px #33333356;
+    overflow: hidden;
+}
+
+.top_button:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+.top_button>img {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* 축소 시 반응형 */
+
+/* @media (max-width: 1520px) {
+    .footer{
+        width: 90%;
+    }
+} */
+/* footer 끝 */
